@@ -1,0 +1,14 @@
+brew update
+brew upgrade git
+brew upgrade python
+
+
+# mac doesn't allow pip installing python libs, fearing they may break the system python environment
+# so install all these inside a virtual environment
+python -m venv colab_local_env ./colab_local_env && source colab_local_env/bin/activate && pip3 install jupyter jupyter_http_over_ws
+
+jupyter notebook --NotebookApp.allow_origin='https://colab.research.google.com' --port=8888 --NotebookApp.port_retries=0
+
+pip3 install tiktoken
+
+
