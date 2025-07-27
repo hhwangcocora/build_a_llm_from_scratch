@@ -1,6 +1,6 @@
 brew update
 brew upgrade git
-brew upgrade python
+#brew upgrade python
 
 
 # mac doesn't allow pip installing python libs, fearing they may break the system python environment
@@ -10,5 +10,11 @@ python -m venv colab_local_env ./colab_local_env && source colab_local_env/bin/a
 jupyter notebook --NotebookApp.allow_origin='https://colab.research.google.com' --port=8888 --NotebookApp.port_retries=0
 
 pip3 install tiktoken
+pip3 install torch torchvision torchaudio
+pip3 install numpy pandas
+
+
+https://colab.research.google.com/drive/1938lsg5n3BkfanAcd12ulmQI8l0HNVez#scrollTo=1gOPlTcDoLJb
+
 
 
