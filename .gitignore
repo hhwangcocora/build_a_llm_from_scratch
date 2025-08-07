@@ -1,2 +1,7 @@
 colab_local_env/
 model_and_optimizer.pth
+spam.csv
+train.csv
+validation.csv
+test.csv
+
