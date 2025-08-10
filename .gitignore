@@ -5,3 +5,5 @@ train.csv
 validation.csv
 test.csv
 
+gpt2/
+Pretrain/model_and_optimizer.pth
